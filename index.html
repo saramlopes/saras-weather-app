@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/f6dbdbe9e6.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js">
+		</script>
+	</head>
+
+	<body>
+		<div class="container my-container">
+			<div class="card-body">
+				<button type="button" class="btn btn-light" id="celsuis-link">°C</button>
+		<button type="button" class="btn btn-light" id="fahrenheit-link"> °F</button>
+		<button type="button"class ="btn btn-light" id="current-location-button"><i class="fas fa-location-arrow" id="locationIcon">
+				</i></button>
+			<form>
+		<input
+					type="text"
+					class="form-control"
+					id="search-input"
+					placeholder="Enter a city"
+					aria-label="Enter a city"
+					autofocus="on"
+				/>
+					<input type = "submit" value="Search" class="searchButton" id="search-button"/> </br>
+			</input>
+		</form>
+		
+		<hr>
+			<h1 class = "currentHour" id=current-hour> 14:13 </h1>
+			<h1 class ="today" id="current-day">Saturday 
+				<br />
+				26 December 2020 
+			</h1>
+				
+			<h1 class="location" id="exact-location"> Ardrossan </h1>
+			<hr>
+				<div class="CurrentTemperature" id="degrees"><strong id="degreesValue">3</strong><strong id="degreesType">ºC</strong></div> 
+				<div class="currentCityConditions" id="current-weather-conditions">Partly cloudy </div> 
+				
+
+<img src="img/weathergirl.svg" class="weatherGirl">
+
+					<div class="weatherConditionsList">
+						<ul>
+							<li id="sunrise">Sunrise: 08:48</li>
+							<li class="sunset">Sunset: 15:52</li>
+							<li class="wind">Wind: 24mph</li>
+							<li class="precipitation">Precipitation: 1.6cm</li>
+						</ul>
+				</div>
+				
+				<p><strong>This week in <span class="thisWeekInCity">Ardrossan</strong>:</span></p>
+				<hr />
+				
+				<div class="row daysOfWeek">
+					<div class="col-md-2 sunday">Sun</div>
+					<div class="col-md-2 monday">Mon</div>
+					<div class="col-md-2 tuesday">Tue</div>
+					<div class="col-md-2 wednesday">Wed</div>
+					<div class="col-md-2 thursday">Thur</div>
+					<div class="col-md-2 friday">Fri</div>
+				</div>
+				<div class="row subEmojis">
+					<i class="fas fa-cloud col-md-2"></i>
+					<i class="far fa-sun col-md-2"></i>
+					<i class="far fa-sun col-md-2"></i>
+					<i class="fas fa-cloud-sun-rain col-md-2"></i>
+					<i class="fas fa-cloud-showers-heavy col-md-2"></i>
+					<i class="fas fa-wind col-md-2"></i>
+				</div>
+
+				<div class="row temp">
+					<div class="col-md-2 sundayTemp">9°C</div>
+					<div class="col-md-2 mondayTemp">10°C</div>
+					<div class="col-md-2 tuesdayTemp">10°C</div>
+					<div class="col-md-2 wednesdayTemp">9°C</div>
+					<div class="col-md-2 thursdayTemp">8°C</div>
+					<div class="col-md-2 fridayTemp">5°C</div>
+				</div>
+				<script src="index.js"></script>
+			</div>
+		</div>
+	</body>
+</html>

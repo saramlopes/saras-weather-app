@@ -1,0 +1,110 @@
+body {
+	background-image: url("img/pexels-szabó-viktor-3227984.jpg");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	padding: 20px 50px;
+}
+.card-body {
+	background-image: linear-gradient(-225deg, #ffb091 0%, #ffe6fa 100%);
+	width: 650px;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+.card {
+	width: 650px;
+}
+
+input.form-control,
+.formcontrol {
+	width: 40%;
+	float: center;
+	border-radius: 5px;
+	display: inline;
+	position: relative;
+	font-size: 18px;
+	text-align: center;
+	font-family: "Unica One", cursive;
+	background-color: white;
+}
+input#search-button.searchButton {
+	border-radius: 5px;
+	background-color: white;
+	color: #393e46;
+	width: 13%;
+	height: 42px;
+	display: inline;
+	font-size: 18px;
+	font-family: "Unica One", cursive;
+	box-shadow: none;
+	border: 1px solid #ced4dc;
+	text-decoration: none;
+	transition: all 200ms ease;
+}
+input#search-button.searchButton:hover {
+	color: white;
+	background-color: #03506f;
+}
+button#celsuis-link.btn-light,
+#fahrenheit-link.btn-light,
+#current-location-button.btn-light {
+	position: relative;
+	float: right;
+	font-size: 18px;
+	display: inline;
+	font-family: "Unica One", cursive;
+	color: #393e46;
+	border-radius: 0px;
+}
+.btn-light .moonCloudIcon {
+	color: #393e46;
+	font-size: 18px;
+}
+h1 {
+	text-align: center;
+	float: center;
+	display: block;
+	color: #393e46;
+	font-family: "Unica One", cursive;
+	background-image: url("img/cloudgif.gif");
+}
+.currentCityConditions,
+#degrees,
+.weatherConditionsList,
+ul {
+	text-align: left;
+	display: block;
+	font-size: 20px;
+	color: #393e46;
+	font-weight: 500px;
+	font-family: "Unica One", cursive;
+}
+ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+#degrees {
+	font-weight: bold;
+}
+.weatherGirl {
+	width: 310px;
+	display: block;
+	position: sticky;
+	float: right;
+}
+p {
+	padding: 5px;
+	font-size: 20px;
+	display: block;
+	color: #393e46;
+	font-family: "Unica One", cursive;
+}
+.daysOfWeek,
+.subEmojis,
+.temp {
+	font-size: 18px;
+	color: #393e46;
+	font-family: "Unica One", cursive;
+	position: relative;
+	left: 25px;
+}
