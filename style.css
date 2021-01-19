@@ -12,7 +12,7 @@ body {
 	border-radius: 10px;
 }
 .card {
-	width: 650px;
+	width: 550px;
 }
 
 input.form-control,
@@ -56,9 +56,8 @@ button#celsuis-link.btn-light,
 	color: #393e46;
 	border-radius: 0px;
 }
-.btn-light .moonCloudIcon {
-	color: #393e46;
-	font-size: 18px;
+h1.exact-location-location {
+	font-weight: 600;
 }
 h1 {
 	text-align: center;
@@ -66,7 +65,9 @@ h1 {
 	display: block;
 	color: #393e46;
 	font-family: "Unica One", cursive;
-	background-image: url("img/cloudgif.gif");
+	background-image: url("img/cloudss.gif");
+	background-size: 110px;
+	background-position: center;
 }
 .currentCityConditions,
 #degrees,
@@ -107,4 +108,12 @@ p {
 	font-family: "Unica One", cursive;
 	position: relative;
 	left: 25px;
+}
+footer {
+	font-family: "Unica One", cursive;
+	text-align: center;
+	color: white;
+}
+#linkedin {
+	color: white;
 }
