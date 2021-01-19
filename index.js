@@ -62,15 +62,15 @@ currentDate.innerHTML = formatDate(now);
 let apiKey = "6c23ea7598ca350d235620d71c7cec0a";
 let unit = "metric";
 let city = "Ardrossan";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}units=${unit}`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
 let celsiusActive = true;
 
 function showTemperature(response) {
+	// temperature
 	let temperature = Math.round(response.data.main.temp);
 	let temperatureElement = document.querySelector("#degreesValue");
 	let description = document.querySelector("#current-weather-conditions");
 	let temperatureType = document.querySelector("#degreesType");
-
 	if (celsiusActive == true) {
 		temperatureType.innerHTML = "ºC";
 		temperatureElement.innerHTML = `${temperature}`;
@@ -79,11 +79,33 @@ function showTemperature(response) {
 		temperatureElement.innerHTML = `${convertedTemperature}`;
 		temperatureType.innerHTML = "ºF";
 	}
+	// sunrise
+	let sunrise = document.querySelector("#sunrise");
+	let _dateSunrise = new Date(response.data.sys.sunrise * 1000);
+	sunrise.innerHTML = _dateSunrise.getHours() + ":" + _dateSunrise.getMinutes();
+
+	//sunset
+	let sunset = document.querySelector("#sunset");
+	let _dateSunset = new Date(response.data.sys.sunset * 1000);
+	sunset.innerHTML = _dateSunset.getHours() + ":" + _dateSunset.getMinutes();
+
+	//wind
+	let wind = document.querySelector("#wind");
+	let _wind = response.data.wind.speed;
+	wind.innerHTML = `${_wind}MPH`;
+
+	//humidity
+	let humidity = document.querySelector("#humidity");
+	let _humidity = response.data.main.humidity;
+	humidity.innerHTML = `${_humidity}%`;
+
+	//description
 	description.innerHTML = response.data.weather[0].description;
 }
 
 axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
 
+//city
 function retrievePosition(position) {
 	let h1 = document.querySelector("#exact-location");
 	h1.innerHTML = city;
@@ -100,8 +122,7 @@ function getCurrentPosition() {
 let currentButton = document.querySelector("#current-location-button");
 currentButton.addEventListener("click", getCurrentPosition);
 
-// FAHRENHEIT/CELSUIS FUNCTION
-
+// fahrenheit/celsuis function
 let celsius = document.querySelector("#celsuis-link");
 let fahrenheit = document.querySelector("#fahrenheit-link");
 
