@@ -113,7 +113,11 @@ footer {
 	font-family: "Unica One", cursive;
 	text-align: center;
 	color: white;
+	font-size: 14px;
 }
 #linkedin {
+	color: white;
+}
+#opensourcecode {
 	color: white;
 }
