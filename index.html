@@ -26,15 +26,18 @@
 		</script>
 	</head>
 
-	<body class="box a" data-aos="fade-up">
+	<body class="box a" data-aos="fade-up" data-aos-duration="3000">
 		<div class="container my-container">
 			<div class="card-body">
+				<div class="container">
 				<button type="button" class="btn btn-light" id="celsuis-link">°C</button>
-		<button type="button" class="btn btn-light" id="fahrenheit-link"> °F</button>
-		<button type="button"class ="btn btn-light" id="current-location-button"><i class="fas fa-location-arrow" id="locationIcon">
-				</i></button>
+				<button type="button" class="btn btn-light" id="fahrenheit-link"> °F</button>
+				<button type="button"class ="btn btn-light" id="current-location-button">
+					<i class="fas fa-location-arrow" id="locationIcon"></i>
+				</button>
+			
 			<form>
-		<input
+				<input
 					type="text"
 					class="form-control"
 					id="search-input"
@@ -42,37 +45,32 @@
 					aria-label="Enter a city"
 					autofocus="on"
 				/>
-					<input type = "submit" value="Search" class="searchButton" id="search-button"/> </br>
+				<input type = "submit" value="Search" class="searchButton" id="search-button"/> </br>
 			</input>
 		</form>
-		
+		</div>
 		<hr>
-			<h1 class = "currentHour" id=current-hour> 14:13 </h1>
-			<h1 class ="today" id="current-day">Saturday 
-				<br />
-				26 December 2020 
-			</h1>
-				
+	<div class="container">
+		<div class="container w-75">
 			<h1 class="location"><strong id="exact-location">Ardrossan</strong></h1>
-			<hr>
-				<div class="CurrentTemperature" id="degrees"><strong id="degreesValue">3</strong><strong id="degreesType">ºC</strong></div> 
-				<div class="currentCityConditions" id="current-weather-conditions">Partly cloudy </div> 
-				
-
-			<img src="img/weathergirl.svg" class="weatherGirl">
-
-				<div class="weatherConditionsList">
-					<ul>
-						<li>Sunrise: <span id ="sunrise">08:48</span> </li>
-						<li>Sunset: <span id= "sunset">15:52</span></li>
-						<li >Wind: <span id="wind">24</span></li>
-						<li>Humidity: <span id="humidity">80</span></li>
+			<h1 class ="today" ><strong id="current-day"> Saturday</strong></h1>
+			<h1 class = "currentHour"><strong id="current-hour">14:13</strong></h1>
+		</div>
+		<div class="container w-25">
+					<ul class="weatherConditionsList">
+							<li id="degrees"><strong class= "sizeDegrees" id="degreesValue">3</strong><strong class="sizeDegrees" id="degreesType">ºC</strong></li> 
+							<li  id="current-weather-conditions">Partly cloudy </li>
+							<li>Sunrise: <span id ="sunrise">08:48</span> </li>
+							<li>Sunset: <span id= "sunset">15:52</span></li>
+							<li >Wind: <span id="wind">24</span></li>
+							<li>Humidity: <span id="humidity">80</span></li>
 					</ul>
-				</div>
-				
+			</div>
+		</div>
+		
+		<div class="container">
 				<p><strong>6-day forecast:</strong></p>
 				<hr />
-				
 				<div class="row daysOfWeek">
 					<div class="col-md-2" id="sunday">Sun</div>
 					<div class="col-md-2" id="monday">Mon</div>
@@ -98,24 +96,29 @@
 					<div class="col-md-2" id="thursdayTemp">8°C</div>
 					<div class="col-md-2" id="fridayTemp">5°C</div>
 				</div>
+				</div>
 			</div>
 		</div>
-		<footer>Miraculously coded  by <a href="https://www.linkedin.com/in/sara-lopes-89866b16b/" target=_blank id="linkedin">Sara Lopes</a>
-		<br><a href="https://github.com/saramlopes/saras-weather-app" target=_blank id="opensourcecode">Open-source code</a> </footer>
+	<footer>Miraculously coded  by <a href="https://www.linkedin.com/in/sara-lopes-89866b16b/" target=_blank id="linkedin">Sara Lopes</a>
+		<br>
+		<a href="https://github.com/saramlopes/saras-weather-app" target=_blank id="opensourcecode">Open-source code</a>
+	 </footer>
+
 		<script src="index.js"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script type="text/javascript">
-			// Inicialización de las animaciones
+			
+			// Animation initiator
 			AOS.init({
 				offset: 200, //default 120
 				delay: 50, //default 0
 				once: true //default false
 			});
-
-			
+			/*
 			$('a[data-toggle="pill"]').on("shown.bs.tab", e => {
 				AOS.refresh();
-			});
+			}); 
+			*/
 		</script>
 	</body>
 </html>

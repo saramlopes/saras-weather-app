@@ -57,32 +57,33 @@ button#celsuis-link.btn-light,
 	border-radius: 0px;
 }
 h1 {
-	text-align: center;
+	text-align: left;
 	float: center;
 	display: block;
 	color: #393e46;
 	font-family: "Unica One", cursive;
-	background-image: url("img/cloudss.gif");
-	background-size: 110px;
-	background-position: center;
 }
-.currentCityConditions,
-#degrees,
-.weatherConditionsList,
+.today,
+.currentHour {
+	font-size: 25px;
+}
 ul {
+	list-style-type: none;
+}
+.sizeDegrees {
+	font-size: 25px;
+}
+.weatherConditionsList {
 	text-align: left;
-	display: block;
+	float: right;
+	position: relative;
+	display: inline;
 	font-size: 20px;
 	color: #393e46;
 	font-weight: 500px;
 	font-family: "Unica One", cursive;
-}
-ul {
-	list-style-type: none;
-	padding-left: 0px;
-}
-#degrees {
-	font-weight: bold;
+	line-height: 25px;
+	padding-top: 0px;
 }
 .weatherGirl {
 	width: 310px;
@@ -101,10 +102,9 @@ p {
 .subEmojis,
 .temp {
 	font-size: 18px;
+	display: block;
 	color: #393e46;
 	font-family: "Unica One", cursive;
-	position: relative;
-	left: 25px;
 }
 footer {
 	font-family: "Unica One", cursive;
