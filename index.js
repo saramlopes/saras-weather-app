@@ -81,13 +81,38 @@ function showTemperature(response) {
 	}
 	// sunrise
 	let sunrise = document.querySelector("#sunrise");
-	let _dateSunrise = new Date(response.data.sys.sunrise * 1000);
-	sunrise.innerHTML = _dateSunrise.getHours() + ":" + _dateSunrise.getMinutes();
+	let _dateSunrise = new Date(
+		(response.data.sys.sunrise + response.data.timezone) * 1000
+	);
+	if (_dateSunrise.getHours() < 10) {
+		if (_dateSunrise.getMinutes() < 10) {
+			sunrise.innerHTML =
+				"0" + _dateSunrise.getHours() + ":" + "0" + _dateSunrise.getMinutes();
+		} else {
+			sunrise.innerHTML =
+				"0" + _dateSunrise.getHours() + ":" + _dateSunrise.getMinutes();
+		}
+	} else {
+		if (_dateSunrise.getMinutes() < 10) {
+			sunrise.innerHTML =
+				_dateSunrise.getHours() + ":" + "0" + _dateSunrise.getMinutes();
+		} else {
+			sunrise.innerHTML =
+				_dateSunrise.getHours() + ":" + _dateSunrise.getMinutes();
+		}
+	}
 
 	//sunset
 	let sunset = document.querySelector("#sunset");
-	let _dateSunset = new Date(response.data.sys.sunset * 1000);
-	sunset.innerHTML = _dateSunset.getHours() + ":" + _dateSunset.getMinutes();
+	let _dateSunset = new Date(
+		(response.data.sys.sunset + response.data.timezone) * 1000
+	);
+	if (_dateSunset.getMinutes() < 10) {
+		sunset.innerHTML =
+			_dateSunset.getHours() + ":" + "0" + _dateSunset.getMinutes();
+	} else {
+		sunset.innerHTML = _dateSunset.getHours() + ":" + _dateSunset.getMinutes();
+	}
 
 	//wind
 	let wind = document.querySelector("#wind");
