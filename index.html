@@ -21,8 +21,8 @@
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 		<script
 			src="https://kit.fontawesome.com/f6dbdbe9e6.js"
-			crossorigin="anonymous"
-		></script>
+			crossorigin="anonymous">
+		</script>
 		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js">
 		</script>
 	</head>
@@ -78,9 +78,13 @@
 			</div>
 		</div>
 	<footer>
+	
+	<div class="spotify">
+		<iframe src="https://open.spotify.com/embed/track/0W95eMaAxNVYTquOsXXkC5" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media">
+		</iframe><br>
 		<a href="https://github.com/saramlopes/saras-weather-app" target=_blank id="opensourcecode">Open-source code</a> by Sara Lopes
-		<br>
-	<span class="btn-o bg" data-scribe="component:button" style="width: 200%;">
+	</div>
+	<span class="btn-o bg" data-scribe="component:button">
 		<a href="https://www.instagram.com/saralo.pes/" target=_blank class="btn" id="b">
 		<i class="fa fa-instagram"></i></a>
 		<span class="btn-o bg" data-scribe="component:button" >
@@ -96,17 +100,17 @@
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script type="text/javascript">
 			
-			// Animation initiator
+			// Animation function	
 			AOS.init({
 				offset: 200, //default 120
 				delay: 50, //default 0
 				once: true //default false
 			});
-			/*
-			$('a[data-toggle="pill"]').on("shown.bs.tab", e => {
+			
+				$('a[data-toggle="pill"]').on("shown.bs.tab", e => {
 				AOS.refresh();
 			}); 
-			*/
+			
 		</script>
 	</body>
 </html>

@@ -10,6 +10,7 @@ body {
 	width: 560px;
 	margin: 0 auto;
 	border-radius: 10px;
+	margin-bottom: 15px;
 }
 div.container.d-flex {
 	padding: 0px;
@@ -122,4 +123,8 @@ a#b.btn {
 	color: white;
 	padding: 0px 0px 0px 7px;
 	font-size: 25px;
+}
+
+iframe {
+	border-radius: 5px;
 }

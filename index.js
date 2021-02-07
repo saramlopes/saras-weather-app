@@ -207,3 +207,7 @@ function cityDisplay(event) {
 
 let formSubmit = document.querySelector("form");
 formSubmit.addEventListener("submit", cityDisplay);
+
+AOS.init({
+	duration: 200,
+});
