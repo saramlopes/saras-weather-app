@@ -34,7 +34,7 @@ input#search-button.searchButton {
 	width: 17%;
 	height: 42px;
 	display: inline;
-	font-size: 20px;
+	font-size: 18px;
 	font-family: "Unica One", cursive;
 	box-shadow: none;
 	border: 1px solid #ced4dc;
@@ -55,6 +55,12 @@ button#celsuis-link.btn-light,
 	font-family: "Unica One", cursive;
 	color: #393e46;
 	border-radius: 0px;
+}
+#current-location-button.btn-light {
+	border-radius: 5px 0px 0px 5px;
+}
+button#celsuis-link.btn-light {
+	border-radius: 0px 5px 5px 0px;
 }
 h1 {
 	text-align: left;
@@ -106,7 +112,7 @@ footer {
 	font-family: "Unica One", cursive;
 	text-align: center;
 	color: white;
-	font-size: 15px;
+	font-size: 12px;
 }
 #linkedin,
 #opensourcecode {
