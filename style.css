@@ -86,7 +86,6 @@ h1 {
 }
 div.clearfix.weather-temperature {
 	height: 100px;
-	padding: 0px 0px, 0px, 0px;
 	margin: 0 auto;
 }
 ul {
@@ -102,7 +101,6 @@ li#current-weather-conditions {
 }
 .weatherConditionsList {
 	text-align: left;
-	float: left;
 	font-size: 20px;
 	color: #393e46;
 	font-weight: 500px;
@@ -117,4 +115,11 @@ footer {
 #linkedin,
 #opensourcecode {
 	color: white;
+}
+.fa-instagram,
+a#b.btn {
+	text-align: center;
+	color: white;
+	padding: 0px 0px 0px 7px;
+	font-size: 25px;
 }
