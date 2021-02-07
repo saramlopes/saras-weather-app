@@ -67,10 +67,13 @@ let celsiusActive = true;
 
 function showTemperature(response) {
 	// temperature
+	console.log();
 	let temperature = Math.round(response.data.main.temp);
 	let temperatureElement = document.querySelector("#degreesValue");
 	let description = document.querySelector("#current-weather-conditions");
 	let temperatureType = document.querySelector("#degreesType");
+	let iconElement = document.querySelector("#mainIcon");
+
 	if (celsiusActive == true) {
 		temperatureType.innerHTML = "ºC";
 		temperatureElement.innerHTML = `${temperature}`;
@@ -79,6 +82,11 @@ function showTemperature(response) {
 		temperatureElement.innerHTML = `${convertedTemperature}`;
 		temperatureType.innerHTML = "ºF";
 	}
+
+	iconElement.setAttribute(
+		"src",
+		`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+	);
 	// sunrise
 	let sunrise = document.querySelector("#sunrise");
 	let _dateSunrise = new Date(
@@ -131,6 +139,7 @@ function showTemperature(response) {
 axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
 
 //city
+
 function retrievePosition(position) {
 	let h1 = document.querySelector("#exact-location");
 	h1.innerHTML = city;
