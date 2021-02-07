@@ -3,21 +3,21 @@ body {
 	background-repeat: repeat;
 	background-attachment: fixed;
 	background-size: 100%;
-	padding: 5px 50px;
+	padding: 15px 50px;
 }
 .card-body {
 	background-image: linear-gradient(-225deg, #ffb091 0%, #ffe6fa 100%);
-	width: 650px;
+	width: 520px;
 	margin: 0 auto;
 	border-radius: 10px;
 }
-.card {
-	width: 550px;
+div.container.d-flex {
+	padding: 0px;
+	background-image: url("img/cloudss.gif");
 }
-
 input.form-control,
 .formcontrol {
-	width: 40%;
+	width: 50%;
 	float: center;
 	border-radius: 5px;
 	display: inline;
@@ -31,10 +31,10 @@ input#search-button.searchButton {
 	border-radius: 5px;
 	background-color: white;
 	color: #393e46;
-	width: 13%;
+	width: 17%;
 	height: 42px;
 	display: inline;
-	font-size: 18px;
+	font-size: 20px;
 	font-family: "Unica One", cursive;
 	box-shadow: none;
 	border: 1px solid #ced4dc;
@@ -62,59 +62,53 @@ h1 {
 	display: block;
 	color: #393e46;
 	font-family: "Unica One", cursive;
+	padding-top: 5px;
+	font-size: 50px;
+}
+.location {
+	font-size: 45px;
+	margin: 0 auto;
 }
 .today,
 .currentHour {
-	font-size: 25px;
+	font-size: 20px;
+}
+.bigIcon {
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+}
+.weatherGirl {
+	padding-bottom: 0px;
+}
+div.clearfix.weather-temperature {
+	height: 100px;
+	padding: 0px 0px, 0px, 0px;
+	margin: 0 auto;
 }
 ul {
 	list-style-type: none;
+	padding-inline-start: 0px;
 }
 .sizeDegrees {
-	font-size: 25px;
+	font-size: 45px;
+	margin: auto 0;
 }
 .weatherConditionsList {
 	text-align: left;
-	float: right;
-	position: relative;
-	display: inline;
+	float: left;
 	font-size: 20px;
 	color: #393e46;
 	font-weight: 500px;
-	font-family: "Unica One", cursive;
-	line-height: 25px;
-	padding-top: 0px;
-}
-.weatherGirl {
-	width: 310px;
-	display: block;
-	position: sticky;
-	float: right;
-}
-p {
-	padding: 5px;
-	font-size: 20px;
-	display: block;
-	color: #393e46;
-	font-family: "Unica One", cursive;
-}
-.daysOfWeek,
-.subEmojis,
-.temp {
-	font-size: 18px;
-	display: block;
-	color: #393e46;
 	font-family: "Unica One", cursive;
 }
 footer {
 	font-family: "Unica One", cursive;
 	text-align: center;
 	color: white;
-	font-size: 14px;
+	font-size: 15px;
 }
-#linkedin {
-	color: white;
-}
+#linkedin,
 #opensourcecode {
 	color: white;
 }

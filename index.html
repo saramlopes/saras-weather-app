@@ -35,7 +35,6 @@
 				<button type="button"class ="btn btn-light" id="current-location-button">
 					<i class="fas fa-location-arrow" id="locationIcon"></i>
 				</button>
-			
 			<form>
 				<input
 					type="text"
@@ -46,57 +45,35 @@
 					autofocus="on"
 				/>
 				<input type = "submit" value="Search" class="searchButton" id="search-button"/> </br>
-			</input>
 		</form>
 		</div>
 		<hr>
-	<div class="container">
-		<div class="container w-75">
+	<div class="container d-flex">
+		<div class="container">
 			<h1 class="location"><strong id="exact-location">Ardrossan</strong></h1>
 			<h1 class ="today" ><strong id="current-day"> Saturday</strong></h1>
-			<h1 class = "currentHour"><strong id="current-hour">14:13</strong></h1>
+			<h1 class = "currentHour">Last updated: <span id="current-hour">14:13</span></h1>
 		</div>
-		<div class="container w-25">
+		<div class="clearfix weather-temperature">
+		<img src= "http://openweathermap.org/img/wn/10d@2x.png"
+		class="bigIcon"
+		id ="mainIcon"
+		alt = "rain"/>
+	</div>
+		<div class="container">
 					<ul class="weatherConditionsList">
-							<li id="degrees"><strong class= "sizeDegrees" id="degreesValue">3</strong><strong class="sizeDegrees" id="degreesType">ºC</strong></li> 
-							<li  id="current-weather-conditions">Partly cloudy </li>
-							<li>Sunrise: <span id ="sunrise">08:48</span> </li>
-							<li>Sunset: <span id= "sunset">15:52</span></li>
-							<li >Wind: <span id="wind">24</span></li>
-							<li>Humidity: <span id="humidity">80</span></li>
+							<li id="degrees"><strong class= "sizeDegrees" id="degreesValue">3</strong>
+								<strong class="sizeDegrees" id="degreesType">ºC</strong></li> 
+							<li id="current-weather-conditions">Partly cloudy</li>
+							<br>
+							<li>Sunrise:<span id ="sunrise"> 08:48</span> </li>
+							<li>Sunset: <span id= "sunset"> 15:52</span></li>
+							<li >Wind:<span id="wind"> 24</span></li>
+							<li>Humidity: <span id="humidity"> 80</span></li>
 					</ul>
 			</div>
 		</div>
-		
-		<div class="container">
-				<p><strong>6-day forecast:</strong></p>
-				<hr />
-				<div class="row daysOfWeek">
-					<div class="col-md-2" id="sunday">Sun</div>
-					<div class="col-md-2" id="monday">Mon</div>
-					<div class="col-md-2" id="tuesday">Tue</div>
-					<div class="col-md-2" id="wednesday">Wed</div>
-					<div class="col-md-2" id="thursday">Thur</div>
-					<div class="col-md-2" id="friday">Fri</div>
-				</div>
-				<div class="row subEmojis">
-					<i class="fas fa-cloud col-md-2"></i>
-					<i class="far fa-sun col-md-2"></i>
-					<i class="far fa-sun col-md-2"></i>
-					<i class="fas fa-cloud-sun-rain col-md-2"></i>
-					<i class="fas fa-cloud-showers-heavy col-md-2"></i>
-					<i class="fas fa-wind col-md-2"></i>
-				</div>
-
-				<div class="row temp">
-					<div class="col-md-2" id="sundayTemp">9°C</div>
-					<div class="col-md-2" id ="mondayTemp">10°C</div>
-					<div class="col-md-2" id="tuesdayTemp">10°C</div>
-					<div class="col-md-2" id="wednesdayTemp">9°C</div>
-					<div class="col-md-2" id="thursdayTemp">8°C</div>
-					<div class="col-md-2" id="fridayTemp">5°C</div>
-				</div>
-				</div>
+			</div>
 			</div>
 		</div>
 	<footer>Miraculously coded  by <a href="https://www.linkedin.com/in/sara-lopes-89866b16b/" target=_blank id="linkedin">Sara Lopes</a>
