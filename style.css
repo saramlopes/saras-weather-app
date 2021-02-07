@@ -7,7 +7,7 @@ body {
 }
 .card-body {
 	background-image: linear-gradient(-225deg, #ffb091 0%, #ffe6fa 100%);
-	width: 520px;
+	width: 560px;
 	margin: 0 auto;
 	border-radius: 10px;
 }
@@ -84,9 +84,6 @@ h1 {
 	height: 90px;
 	margin: 0 auto;
 }
-.weatherGirl {
-	padding-bottom: 0px;
-}
 div.clearfix.weather-temperature {
 	height: 100px;
 	padding: 0px 0px, 0px, 0px;
@@ -99,6 +96,9 @@ ul {
 .sizeDegrees {
 	font-size: 45px;
 	margin: auto 0;
+}
+li#current-weather-conditions {
+	font-weight: bold;
 }
 .weatherConditionsList {
 	text-align: left;
