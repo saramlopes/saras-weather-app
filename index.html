@@ -31,10 +31,13 @@
 		<div class="container my-container">
 			<div class="card-body">
 				<div class="container">
-				<button type="button" class="btn btn-light" id="celsuis-link">°C</button>
-				<button type="button" class="btn btn-light" id="fahrenheit-link"> °F</button>
+					<button type="button" class="btn btn-light" id="celsuis-link">°C
+					</button>
+					<button type="button" class="btn btn-light" id="fahrenheit-link"> °F
+					</button>
 				<button type="button"class ="btn btn-light" id="current-location-button">
-					<i class="fas fa-location-arrow" id="locationIcon"></i>
+					<i class="fas fa-location-arrow" id="locationIcon">
+					</i>
 				</button>
 			<form>
 				<input
@@ -45,17 +48,27 @@
 					aria-label="Enter a city"
 					autofocus="on"
 				/>
-				<input type = "submit" value="Search" class="searchButton" id="search-button"/> </br>
+				<input type = "submit" value="Search" class="searchButton" id="search-button"/> 
+			</br>
 		</form>
 		</div>
 		<hr>
 	<div class="container d-flex">
 		<div class="container">
-			<h1 class="location"><strong id="exact-location">Ardrossan</strong></h1>
-			<h1 class ="today" ><strong id="current-day"> Saturday</strong></h1>
-			<h1 class = "currentHour">Last updated: <span id="current-hour">14:13</span></h1>
-		</div>
-		<div class="clearfix weather-temperature">
+			<h1 class="location">
+				<strong id="exact-location">Ardrossan
+				</strong>
+			</h1>
+			<h1 class ="today" >
+				<strong id="current-day"> Saturday
+				</strong>
+			</h1>
+			<h1 class = "currentHour">Last updated: 
+				<span id="current-hour">14:13
+				</span>
+			</h1>
+	</div>
+	<div class="clearfix weather-temperature">
 		<img src= "http://openweathermap.org/img/wn/10d@2x.png"
 		class="bigIcon"
 		id ="mainIcon"
@@ -63,41 +76,64 @@
 	</div>
 		<div class="container">
 					<ul class="weatherConditionsList">
-							<li id="degrees"><strong class= "sizeDegrees" id="degreesValue">3</strong>
-								<strong class="sizeDegrees" id="degreesType">ºC</strong></li> 
-							<li id="current-weather-conditions">Partly cloudy</li>
-							<br>
-							<li>Sunrise:<span id ="sunrise"> 08:48</span> </li>
-							<li>Sunset: <span id= "sunset"> 15:52</span></li>
-							<li >Wind:<span id="wind"> 24</span></li>
-							<li>Humidity: <span id="humidity"> 80</span></li>
-					</ul>
+							<li id="degrees">
+								<strong class= "sizeDegrees" id="degreesValue">3
+								</strong>
+								<strong class="sizeDegrees" id="degreesType">ºC
+								</strong>
+							</li> 
+								<li id="current-weather-conditions">Partly cloudy
+								</li>
+									<br>
+								<li>Sunrise:
+									<span id ="sunrise"> 08:48
+								</span> 
+								</li>
+									<li>Sunset: 
+										<span id= "sunset"> 15:52
+									</span>
+									</li>
+										<li >Wind:
+											<span id="wind"> 24
+										</span>
+										</li>
+									<li>Humidity: 
+										<span id="humidity"> 80
+										</span>
+								</li>
+						</ul>
+			</div>
+	</div>
+			</div>
 			</div>
 		</div>
-			</div>
-			</div>
-		</div>
-	<footer>
-	
+		
+<footer>
 	<div class="spotify">
 		<iframe src="https://open.spotify.com/embed/track/0W95eMaAxNVYTquOsXXkC5" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media">
-		</iframe><br>
-		<a href="https://github.com/saramlopes/saras-weather-app" target=_blank id="opensourcecode">Open-source code</a> by Sara Lopes
+		</iframe>
+		<br>
+		<a href="https://github.com/saramlopes/saras-weather-app" target=_blank id="opensourcecode">Open-source code
+		</a> by Sara Lopes
 	</div>
 	<span class="btn-o bg" data-scribe="component:button">
 		<a href="https://www.instagram.com/saralo.pes/" target=_blank class="btn" id="b">
-		<i class="fa fa-instagram"></i></a>
-		<span class="btn-o bg" data-scribe="component:button" >
-			<a href="https://www.linkedin.com/in/sara-lopes-89866b16b/" target=_blank class="btn" id="b">
-				<i class="fa fa-linkedin">
-				</i>
+		<i class="fa fa-instagram">
+		</i>
+	</a>
+	<span class="btn-o bg" data-scribe="component:button" >
+		<a href="https://www.linkedin.com/in/sara-lopes-89866b16b/" target=_blank class="btn" id="b">
+			<i class="fa fa-linkedin">
+			</i>
 			</a>
 		</span>
 	</span>
-	 </footer>
+</footer>
 
-		<script src="index.js"></script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="index.js">
+		</script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+		</script>
 		<script type="text/javascript">
 			
 			// Animation function	
